@@ -13,33 +13,6 @@ Edine@DESKTOP-DTASPUT MINGW64 ~/Documents/the Gym/Git-practice-project1 (master)
 $ git branch -M main
 
 Edine@DESKTOP-DTASPUT MINGW64 ~/Documents/the Gym/Git-practice-project1 (main)
-$ touch main.js
-
-Edine@DESKTOP-DTASPUT MINGW64 ~/Documents/the Gym/Git-practice-project1 (main)
-$ touch subMain.js
-
-Edine@DESKTOP-DTASPUT MINGW64 ~/Documents/the Gym/Git-practice-project1 (main)
-$ ls
-main.js  subMain.js
-
-Edine@DESKTOP-DTASPUT MINGW64 ~/Documents/the Gym/Git-practice-project1 (main)
-$ ls
-index.html  main.js
-
-Edine@DESKTOP-DTASPUT MINGW64 ~/Documents/the Gym/Git-practice-project1 (main)
-$ git status
-On branch main
-
-No commits yet
-
-Untracked files:
-  (use "git add <file>..." to include in what will be committed)
-        index.html
-        main.js
-
-nothing added to commit but untracked files present (use "git add" to track)
-
-Edine@DESKTOP-DTASPUT MINGW64 ~/Documents/the Gym/Git-practice-project1 (main)
 $ git add .
 
 Edine@DESKTOP-DTASPUT MINGW64 ~/Documents/the Gym/Git-practice-project1 (main)
@@ -48,11 +21,6 @@ $ git commit -m "first commit"
  2 files changed, 13 insertions(+)
  create mode 100644 index.html
  create mode 100644 main.js
-
-Edine@DESKTOP-DTASPUT MINGW64 ~/Documents/the Gym/Git-practice-project1 (main)
-$ git status
-On branch main
-nothing to commit, working tree clean
 
 Edine@DESKTOP-DTASPUT MINGW64 ~/Documents/the Gym/Git-practice-project1 (main)
 $ git remote add origin https://github.com/edine-noella/Git-practice-project1.git
@@ -89,5 +57,4 @@ Edine@DESKTOP-DTASPUT MINGW64 ~/Documents/the Gym/Git-practice-project1 (dev)
 $ git branch
 * dev
   main
-
 ```
