@@ -745,3 +745,61 @@ To https://github.com/edine-noella/Git-practice-project1.git
  * [new branch]      ft/home-page-redesign -> ft/home-page-redesign
 
 ```
+
+## Bundle 4
+
+### Exercise 1
+
+```bash
+Edine@DESKTOP-DTASPUT MINGW64 ~/Documents/the Gym/Git-practice-project1 (ft/home-page-redesign)
+$ git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+Edine@DESKTOP-DTASPUT MINGW64 ~/Documents/the Gym/Git-practice-project1 (main)
+$ git remote add git-copy https://github.com/edine-noella/Git-practice-project-2.git
+
+Edine@DESKTOP-DTASPUT MINGW64 ~/Documents/the Gym/Git-practice-project1 (main)
+$ git remote -v
+git-copy        https://github.com/edine-noella/Git-practice-project-2.git (fetch)
+git-copy        https://github.com/edine-noella/Git-practice-project-2.git (push)
+origin  https://github.com/edine-noella/Git-practice-project1.git (fetch)
+origin  https://github.com/edine-noella/Git-practice-project1.git (push)
+
+Edine@DESKTOP-DTASPUT MINGW64 ~/Documents/the Gym/Git-practice-project1 (main)
+$ git add .
+
+Edine@DESKTOP-DTASPUT MINGW64 ~/Documents/the Gym/Git-practice-project1 (main)
+$ git commit -m "adde changes to the home page"
+[main 34337bd] adde changes to the home page
+ 1 file changed, 4 insertions(+), 2 deletions(-)
+
+Edine@DESKTOP-DTASPUT MINGW64 ~/Documents/the Gym/Git-practice-project1 (main)
+$ git push
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 390 bytes | 390.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To https://github.com/edine-noella/Git-practice-project1.git
+   bfeb393..34337bd  main -> main
+
+Edine@DESKTOP-DTASPUT MINGW64 ~/Documents/the Gym/Git-practice-project1 (main)
+$ git push origin main
+Everything up-to-date
+
+Edine@DESKTOP-DTASPUT MINGW64 ~/Documents/the Gym/Git-practice-project1 (main)
+$ git push git-copy main
+Enumerating objects: 35, done.
+Counting objects: 100% (35/35), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (35/35), done.
+Writing objects: 100% (35/35), 5.04 KiB | 860.00 KiB/s, done.
+Total 35 (delta 17), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (17/17), done.
+To https://github.com/edine-noella/Git-practice-project-2.git
+ * [new branch]      main -> main
+
+```
