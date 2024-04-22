@@ -997,3 +997,37 @@ To https://github.com/edine-noella/git-cafe-exercise.git
  * [new branch]      ft/menu -> ft/menu
 
 ```
+
+### Exercise 2
+
+```bash
+Edine@DESKTOP-DTASPUT MINGW64 ~/Documents/the Gym/fork git practice/git-cafe-exercise (ft/menu)
+$ git checkout -b fx/bug-fix
+Switched to a new branch 'fx/bug-fix'
+
+Edine@DESKTOP-DTASPUT MINGW64 ~/Documents/the Gym/fork git practice/git-cafe-exercise (fx/bug-fix)
+$ git add .
+
+Edine@DESKTOP-DTASPUT MINGW64 ~/Documents/the Gym/fork git practice/git-cafe-exercise (fx/bug-fix)
+$ git commit -m "rename index4 to contact"
+[fx/bug-fix 4364163] rename index4 to contact
+ 1 file changed, 203 insertions(+), 203 deletions(-)
+ rename index-4.html => contact.html (97%)
+
+Edine@DESKTOP-DTASPUT MINGW64 ~/Documents/the Gym/fork git practice/git-cafe-exercise (fx/bug-fix)
+$ git push origin fx/bug-fix
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 2.49 KiB | 2.49 MiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+remote:
+remote: Create a pull request for 'fx/bug-fix' on GitHub by visiting:
+remote:      https://github.com/edine-noella/git-cafe-exercise/pull/new/fx/bug-fix
+remote:
+To https://github.com/edine-noella/git-cafe-exercise.git
+ * [new branch]      fx/bug-fix -> fx/bug-fix
+
+```
