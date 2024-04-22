@@ -803,3 +803,85 @@ To https://github.com/edine-noella/Git-practice-project-2.git
  * [new branch]      main -> main
 
 ```
+
+### Exercise 2
+
+```bash
+Edine@DESKTOP-DTASPUT MINGW64 ~/Documents/the Gym/Git-practice-project1 (main)
+$ git checkout -b ft/footer
+Switched to a new branch 'ft/footer'
+
+Edine@DESKTOP-DTASPUT MINGW64 ~/Documents/the Gym/Git-practice-project1 (ft/footer)
+$ git add .
+
+Edine@DESKTOP-DTASPUT MINGW64 ~/Documents/the Gym/Git-practice-project1 (ft/footer)
+$ git commit -m "added address to home page"
+[ft/footer b6b17c7] added address to home page
+ 1 file changed, 1 insertion(+)
+
+Edine@DESKTOP-DTASPUT MINGW64 ~/Documents/the Gym/Git-practice-project1 (ft/footer)
+$ git add .
+
+Edine@DESKTOP-DTASPUT MINGW64 ~/Documents/the Gym/Git-practice-project1 (ft/footer)
+$ git commit -m " added our phone number"
+[ft/footer cd0d546]  added our phone number
+ 1 file changed, 1 insertion(+)
+
+Edine@DESKTOP-DTASPUT MINGW64 ~/Documents/the Gym/Git-practice-project1 (ft/footer)
+$ git push origin ft/footer
+Enumerating objects: 8, done.
+Counting objects: 100% (8/8), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (6/6), done.
+Writing objects: 100% (6/6), 606 bytes | 606.00 KiB/s, done.
+Total 6 (delta 4), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (4/4), completed with 2 local objects.
+remote:
+remote: Create a pull request for 'ft/footer' on GitHub by visiting:
+remote:      https://github.com/edine-noella/Git-practice-project1/pull/new/ft/footer
+remote:
+To https://github.com/edine-noella/Git-practice-project1.git
+ * [new branch]      ft/footer -> ft/footer
+
+Edine@DESKTOP-DTASPUT MINGW64 ~/Documents/the Gym/Git-practice-project1 (ft/footer)
+$ git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+Edine@DESKTOP-DTASPUT MINGW64 ~/Documents/the Gym/Git-practice-project1 (main)
+$ git checkout -b ft/squashing
+Switched to a new branch 'ft/squashing'
+
+Edine@DESKTOP-DTASPUT MINGW64 ~/Documents/the Gym/Git-practice-project1 (ft/squashing)
+$ git merge --squash ft/footer
+Updating 34337bd..cd0d546
+Fast-forward
+Squash commit -- not updating HEAD
+ home.html | 2 ++
+ 1 file changed, 2 insertions(+)
+
+Edine@DESKTOP-DTASPUT MINGW64 ~/Documents/the Gym/Git-practice-project1 (ft/squashing)
+$ git add .
+
+Edine@DESKTOP-DTASPUT MINGW64 ~/Documents/the Gym/Git-practice-project1 (ft/squashing)
+$ git commit -m "footer changes squashing"
+[ft/squashing 19f9868] footer changes squashing
+ 1 file changed, 2 insertions(+)
+
+Edine@DESKTOP-DTASPUT MINGW64 ~/Documents/the Gym/Git-practice-project1 (ft/squashing)
+$ git push origin ft/squashing
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 350 bytes | 350.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+remote:
+remote: Create a pull request for 'ft/squashing' on GitHub by visiting:
+remote:      https://github.com/edine-noella/Git-practice-project1/pull/new/ft/squashing
+remote:
+To https://github.com/edine-noella/Git-practice-project1.git
+ * [new branch]      ft/squashing -> ft/squashing
+
+```
