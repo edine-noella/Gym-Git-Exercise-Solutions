@@ -394,3 +394,291 @@ Edine@DESKTOP-DTASPUT MINGW64 ~/Documents/the Gym/Git-practice-project1 (ft/serv
 $
 
 ```
+
+## Bundle 3
+
+### Exercise 1
+
+```bash
+Edine@DESKTOP-DTASPUT MINGW64 ~/Documents/the Gym/Git-practice-project1 (main)
+$ git checkout -b ft/team-page
+Switched to a new branch 'ft/team-page'
+
+Edine@DESKTOP-DTASPUT MINGW64 ~/Documents/the Gym/Git-practice-project1 (ft/team-page)
+$ touch team.html
+
+Edine@DESKTOP-DTASPUT MINGW64 ~/Documents/the Gym/Git-practice-project1 (ft/team-page)
+$ git add .
+
+Edine@DESKTOP-DTASPUT MINGW64 ~/Documents/the Gym/Git-practice-project1 (ft/team-page)
+$ git commit -m "added the team page"
+[ft/team-page 76a811c] added the team page
+ 1 file changed, 11 insertions(+)
+ create mode 100644 team.html
+
+Edine@DESKTOP-DTASPUT MINGW64 ~/Documents/the Gym/Git-practice-project1 (ft/team-page)
+$ git push
+fatal: The current branch ft/team-page has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin ft/team-page
+
+To have this happen automatically for branches without a tracking
+upstream, see 'push.autoSetupRemote' in 'git help config'.
+
+
+Edine@DESKTOP-DTASPUT MINGW64 ~/Documents/the Gym/Git-practice-project1 (ft/team-page)
+$ git push origin ft/team-page
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 429 bytes | 429.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+remote:
+remote: Create a pull request for 'ft/team-page' on GitHub by visiting:
+remote:      https://github.com/edine-noella/Git-practice-project1/pull/new/ft/team-page
+remote:
+To https://github.com/edine-noella/Git-practice-project1.git
+ * [new branch]      ft/team-page -> ft/team-page
+
+Edine@DESKTOP-DTASPUT MINGW64 ~/Documents/the Gym/Git-practice-project1 (ft/team-page)
+$ git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+Edine@DESKTOP-DTASPUT MINGW64 ~/Documents/the Gym/Git-practice-project1 (main)
+$ git checkout -b ft/contact-page
+Switched to a new branch 'ft/contact-page'
+
+Edine@DESKTOP-DTASPUT MINGW64 ~/Documents/the Gym/Git-practice-project1 (ft/contact-page)
+$ git checkout ft/team-page
+Switched to branch 'ft/team-page'
+
+Edine@DESKTOP-DTASPUT MINGW64 ~/Documents/the Gym/Git-practice-project1 (ft/team-page)
+$ git log
+commit 76a811c6b82cf59857af43a5a0327b788efe6316 (HEAD -> ft/team-page, origin/ft/team-page)
+Author: edine-noella <edinenoella@gmail.com>
+Date:   Mon Apr 22 15:49:27 2024 +0200
+
+    added the team page
+
+commit de131fda8de2b24732ff6742820068524a9d17cf (origin/main, main, ft/contact-page)
+Author: edine-noella <edinenoella@gmail.com>
+Date:   Mon Apr 22 15:24:16 2024 +0200
+
+    added changes to our conflicts
+
+commit 78b8f5a5a52349fee46a42444a517e830477624f
+Author: edine-noella <edinenoella@gmail.com>
+Date:   Mon Apr 22 15:18:32 2024 +0200
+
+    added Objects of list to our services
+
+commit 2e4beb04108f652a2ea9326c48ca697f3c760d9b
+Merge: e8a65d0 7891da4
+Author: tuyishimehono <tuhonori1@gmail.com>
+Date:   Mon Apr 22 14:59:51 2024 +0200
+
+    Merge pull request #3 from edine-noella/ft/bundle-2
+
+    Added our services
+
+commit 7891da44f24fc94bf2bc1d37eed5f44022acedfd (origin/ft/bundle-2, ft/bundle-2)
+Author: edine-noella <edinenoella@gmail.com>
+Date:   Mon Apr 22 14:21:16 2024 +0200
+
+    new branch
+
+commit 757662f0e6f73be9a8939cc5fe1e6ed06b6f3ef4
+Author: edine-noella <edinenoella@gmail.com>
+Date:   Mon Apr 22 13:42:22 2024 +0200
+
+    added our services
+
+commit e8a65d07c7f3b42451652dc0f4f9ec79da8ec331
+Merge: 3276ce4 b4c6cae
+Author: Mugisha Edine Noella <edinenoella@gmail.com>
+Date:   Mon Apr 22 12:47:29 2024 +0200
+
+    Merge pull request #1 from edine-noella/dev
+
+    Dev
+
+commit b4c6cae11c443faf935d2d4725e36ced08daaf1c (origin/dev, dev)
+Author: edine-noella <edinenoella@gmail.com>
+Date:   Mon Apr 22 12:40:34 2024 +0200
+
+    home and about pages
+
+commit e3f0917a5254b5dad1dac4204666fa1acacbf3b0
+Author: edine-noella <edinenoella@gmail.com>
+Date:   Mon Apr 22 12:35:01 2024 +0200
+
+    restored eveything
+
+:
+commit 76a811c6b82cf59857af43a5a0327b788efe6316 (HEAD -> ft/team-page, origin/ft/team-page)
+Author: edine-noella <edinenoella@gmail.com>
+Date:   Mon Apr 22 15:49:27 2024 +0200
+
+    added the team page
+
+commit de131fda8de2b24732ff6742820068524a9d17cf (origin/main, main, ft/contact-page)
+Author: edine-noella <edinenoella@gmail.com>
+Date:   Mon Apr 22 15:24:16 2024 +0200
+
+    added changes to our conflicts
+
+commit 78b8f5a5a52349fee46a42444a517e830477624f
+Author: edine-noella <edinenoella@gmail.com>
+Date:   Mon Apr 22 15:18:32 2024 +0200
+
+    added Objects of list to our services
+
+commit 2e4beb04108f652a2ea9326c48ca697f3c760d9b
+Merge: e8a65d0 7891da4
+Author: tuyishimehono <tuhonori1@gmail.com>
+Date:   Mon Apr 22 14:59:51 2024 +0200
+
+    Merge pull request #3 from edine-noella/ft/bundle-2
+
+    Added our services
+
+commit 7891da44f24fc94bf2bc1d37eed5f44022acedfd (origin/ft/bundle-2, ft/bundle-2)
+Author: edine-noella <edinenoella@gmail.com>
+Date:   Mon Apr 22 14:21:16 2024 +0200
+
+    new branch
+
+commit 757662f0e6f73be9a8939cc5fe1e6ed06b6f3ef4
+Author: edine-noella <edinenoella@gmail.com>
+Date:   Mon Apr 22 13:42:22 2024 +0200
+
+    added our services
+
+commit e8a65d07c7f3b42451652dc0f4f9ec79da8ec331
+Merge: 3276ce4 b4c6cae
+Author: Mugisha Edine Noella <edinenoella@gmail.com>
+Date:   Mon Apr 22 12:47:29 2024 +0200
+
+    Merge pull request #1 from edine-noella/dev
+
+    Dev
+
+commit b4c6cae11c443faf935d2d4725e36ced08daaf1c (origin/dev, dev)
+Author: edine-noella <edinenoella@gmail.com>
+Date:   Mon Apr 22 12:40:34 2024 +0200
+
+    home and about pages
+
+commit e3f0917a5254b5dad1dac4204666fa1acacbf3b0
+Author: edine-noella <edinenoella@gmail.com>
+Date:   Mon Apr 22 12:35:01 2024 +0200
+
+    restored eveything
+
+
+Edine@DESKTOP-DTASPUT MINGW64 ~/Documents/the Gym/Git-practice-project1 (ft/team-page)
+$ git checkout ft/contact-page
+Switched to branch 'ft/contact-page'
+
+Edine@DESKTOP-DTASPUT MINGW64 ~/Documents/the Gym/Git-practice-project1 (ft/contact-page)
+$ git cherry-pick 76a811c6b82cf59857af43a5a0327b788efe6316
+[ft/contact-page 498c21f] added the team page
+ Date: Mon Apr 22 15:49:27 2024 +0200
+ 1 file changed, 11 insertions(+)
+ create mode 100644 team.html
+
+Edine@DESKTOP-DTASPUT MINGW64 ~/Documents/the Gym/Git-practice-project1 (ft/contact-page)
+$ git add .
+
+Edine@DESKTOP-DTASPUT MINGW64 ~/Documents/the Gym/Git-practice-project1 (ft/contact-page)
+$ git commit -m "contact page branch cherry pick the team page branch"
+On branch ft/contact-page
+nothing to commit, working tree clean
+
+Edine@DESKTOP-DTASPUT MINGW64 ~/Documents/the Gym/Git-practice-project1 (ft/contact-page)
+$ git push origin ft/contact-page
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 434 bytes | 434.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+remote:
+remote: Create a pull request for 'ft/contact-page' on GitHub by visiting:
+remote:      https://github.com/edine-noella/Git-practice-project1/pull/new/ft/contact-page
+remote:
+To https://github.com/edine-noella/Git-practice-project1.git
+ * [new branch]      ft/contact-page -> ft/contact-page
+
+Edine@DESKTOP-DTASPUT MINGW64 ~/Documents/the Gym/Git-practice-project1 (ft/contact-page)
+$ git checkout ft/faq-page
+error: pathspec 'ft/faq-page' did not match any file(s) known to git
+
+Edine@DESKTOP-DTASPUT MINGW64 ~/Documents/the Gym/Git-practice-project1 (ft/contact-page)
+$ git checkout -b ft/faq-page
+Switched to a new branch 'ft/faq-page'
+
+Edine@DESKTOP-DTASPUT MINGW64 ~/Documents/the Gym/Git-practice-project1 (ft/faq-page)
+$ touch faq.html
+
+Edine@DESKTOP-DTASPUT MINGW64 ~/Documents/the Gym/Git-practice-project1 (ft/faq-page)
+$ git add .
+
+Edine@DESKTOP-DTASPUT MINGW64 ~/Documents/the Gym/Git-practice-project1 (ft/faq-page)
+$ git commit -m 'Added the FAQ page'
+[ft/faq-page 9c9c6c7] Added the FAQ page
+ 1 file changed, 11 insertions(+)
+ create mode 100644 faq.html
+
+Edine@DESKTOP-DTASPUT MINGW64 ~/Documents/the Gym/Git-practice-project1 (ft/faq-page)
+$ git push origin ft/faq-page
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 431 bytes | 431.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+remote:
+remote: Create a pull request for 'ft/faq-page' on GitHub by visiting:
+remote:      https://github.com/edine-noella/Git-practice-project1/pull/new/ft/faq-page
+remote:
+To https://github.com/edine-noella/Git-practice-project1.git
+ * [new branch]      ft/faq-page -> ft/faq-page
+
+Edine@DESKTOP-DTASPUT MINGW64 ~/Documents/the Gym/Git-practice-project1 (ft/faq-page)
+$ git revert 76a811c6b82cf59857af43a5a0327b788efe6316
+[ft/faq-page 33bc7ca] Revert "added the team page"
+ 1 file changed, 11 deletions(-)
+ delete mode 100644 team.html
+
+Edine@DESKTOP-DTASPUT MINGW64 ~/Documents/the Gym/Git-practice-project1 (ft/faq-page)
+$ git add .
+
+Edine@DESKTOP-DTASPUT MINGW64 ~/Documents/the Gym/Git-practice-project1 (ft/faq-page)
+$ git commit -m "reverted the added the team page commit"
+On branch ft/faq-page
+nothing to commit, working tree clean
+
+Edine@DESKTOP-DTASPUT MINGW64 ~/Documents/the Gym/Git-practice-project1 (ft/faq-page)
+$ git push origin ft/faq-page
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (2/2), 270 bytes | 270.00 KiB/s, done.
+Total 2 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/edine-noella/Git-practice-project1.git
+   9c9c6c7..33bc7ca  ft/faq-page -> ft/faq-page
+
+Edine@DESKTOP-DTASPUT MINGW64 ~/Documents/the Gym/Git-practice-project1 (ft/faq-page)
+$
+
+
+```
