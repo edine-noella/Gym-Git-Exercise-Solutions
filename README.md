@@ -920,3 +920,41 @@ To https://github.com/edine-noella/Git-practice-project1.git
    34337bd..2ce0a72  main -> main
 
 ```
+
+### Exercise 2
+
+```bash
+Edine@DESKTOP-DTASPUT MINGW64 ~/Documents/the Gym/fork git practice
+$ git clone https://github.com/edine-noella/git-cafe-exercise.git
+Cloning into 'git-cafe-exercise'...
+remote: Enumerating objects: 107, done.
+remote: Counting objects: 100% (14/14), done.
+remote: Compressing objects: 100% (10/10), done.
+remote: Total 107 (delta 5), reused 4 (delta 4), pack-reused 93
+Receiving objects: 100% (107/107), 1.95 MiB | 1.68 MiB/s, done.
+Resolving deltas: 100% (5/5), done.
+
+Edine@DESKTOP-DTASPUT MINGW64 ~/Documents/the Gym/fork git practice
+$ cd git-cafe-exercise/
+
+Edine@DESKTOP-DTASPUT MINGW64 ~/Documents/the Gym/fork git practice/git-cafe-exercise (main)
+$ git add .
+
+Edine@DESKTOP-DTASPUT MINGW64 ~/Documents/the Gym/fork git practice/git-cafe-exercise (main)
+$ git commit -m "changed index.html"
+[main e659876] changed index.html
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+Edine@DESKTOP-DTASPUT MINGW64 ~/Documents/the Gym/fork git practice/git-cafe-exercise (main)
+$ git push
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 314 bytes | 314.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To https://github.com/edine-noella/git-cafe-exercise.git
+   d1d3f9c..e659876  main -> main
+
+```
