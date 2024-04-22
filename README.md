@@ -1031,3 +1031,35 @@ To https://github.com/edine-noella/git-cafe-exercise.git
  * [new branch]      fx/bug-fix -> fx/bug-fix
 
 ```
+
+### Exercise 3
+
+```bash
+Edine@DESKTOP-DTASPUT MINGW64 ~/Documents/the Gym/fork git practice/git-cafe-exercise (fx/bug-fix)
+$ git checkout -b fx/hot-fixes
+Switched to a new branch 'fx/hot-fixes'
+
+Edine@DESKTOP-DTASPUT MINGW64 ~/Documents/the Gym/fork git practice/git-cafe-exercise (fx/hot-fixes)
+$ git add .
+
+Edine@DESKTOP-DTASPUT MINGW64 ~/Documents/the Gym/fork git practice/git-cafe-exercise (fx/hot-fixes)
+$ git commit -m "hot fixed things"
+[fx/hot-fixes 4ae287f] hot fixed things
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+Edine@DESKTOP-DTASPUT MINGW64 ~/Documents/the Gym/fork git practice/git-cafe-exercise (fx/hot-fixes)
+$ git push origin fx/hot-fixes
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 293 bytes | 293.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+remote:
+remote: Create a pull request for 'fx/hot-fixes' on GitHub by visiting:
+remote:      https://github.com/edine-noella/git-cafe-exercise/pull/new/fx/hot-fixes
+remote:
+To https://github.com/edine-noella/git-cafe-exercise.git
+ * [new branch]      fx/hot-fixes -> fx/hot-fixes
+```
