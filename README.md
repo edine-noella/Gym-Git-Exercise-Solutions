@@ -885,3 +885,38 @@ To https://github.com/edine-noella/Git-practice-project1.git
  * [new branch]      ft/squashing -> ft/squashing
 
 ```
+
+## Bundle 5
+
+### Exercise 1
+
+```bash
+Edine@DESKTOP-DTASPUT MINGW64 ~/Documents/the Gym/Git-practice-project1 (ft/squashing)
+$ git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+Edine@DESKTOP-DTASPUT MINGW64 ~/Documents/the Gym/Git-practice-project1 (main)
+$ touch index.html
+
+Edine@DESKTOP-DTASPUT MINGW64 ~/Documents/the Gym/Git-practice-project1 (main)
+$ git add .
+
+Edine@DESKTOP-DTASPUT MINGW64 ~/Documents/the Gym/Git-practice-project1 (main)
+$ git commit -m "added index file"
+[main 2ce0a72] added index file
+ 1 file changed, 11 insertions(+)
+ create mode 100644 index.html
+
+Edine@DESKTOP-DTASPUT MINGW64 ~/Documents/the Gym/Git-practice-project1 (main)
+$ git push
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 436 bytes | 436.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+To https://github.com/edine-noella/Git-practice-project1.git
+   34337bd..2ce0a72  main -> main
+
+```
