@@ -677,8 +677,71 @@ remote: Resolving deltas: 100% (1/1), completed with 1 local object.
 To https://github.com/edine-noella/Git-practice-project1.git
    9c9c6c7..33bc7ca  ft/faq-page -> ft/faq-page
 
-Edine@DESKTOP-DTASPUT MINGW64 ~/Documents/the Gym/Git-practice-project1 (ft/faq-page)
-$
+```
 
+### Exercise 2
+
+```bash
+Edine@DESKTOP-DTASPUT MINGW64 ~/Documents/the Gym/Git-practice-project1 (ft/faq-page)
+$ git checkout -b ft/home-page-redesign
+Switched to a new branch 'ft/home-page-redesign'
+
+Edine@DESKTOP-DTASPUT MINGW64 ~/Documents/the Gym/Git-practice-project1 (ft/home-page-redesign)
+$ git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+Edine@DESKTOP-DTASPUT MINGW64 ~/Documents/the Gym/Git-practice-project1 (main)
+$ git add .
+
+Edine@DESKTOP-DTASPUT MINGW64 ~/Documents/the Gym/Git-practice-project1 (main)
+$ git commit -m " bundle3 exericeses2 chaning main branch"
+[main bfeb393]  bundle3 exericeses2 chaning main branch
+ 2 files changed, 1 insertion(+), 11 deletions(-)
+ delete mode 100644 index.html
+
+Edine@DESKTOP-DTASPUT MINGW64 ~/Documents/the Gym/Git-practice-project1 (main)
+$ git push
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 409 bytes | 409.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To https://github.com/edine-noella/Git-practice-project1.git
+   de131fd..bfeb393  main -> main
+
+Edine@DESKTOP-DTASPUT MINGW64 ~/Documents/the Gym/Git-practice-project1 (main)
+$ git checkout ft/home-page-redesign
+Switched to branch 'ft/home-page-redesign'
+
+Edine@DESKTOP-DTASPUT MINGW64 ~/Documents/the Gym/Git-practice-project1 (ft/home-page-redesign)
+$ git rebase main
+Successfully rebased and updated refs/heads/ft/home-page-redesign.
+
+Edine@DESKTOP-DTASPUT MINGW64 ~/Documents/the Gym/Git-practice-project1 (ft/home-page-redesign)
+$ git add .
+
+Edine@DESKTOP-DTASPUT MINGW64 ~/Documents/the Gym/Git-practice-project1 (ft/home-page-redesign)
+$ git commit -m "rebase main branch"
+On branch ft/home-page-redesign
+nothing to commit, working tree clean
+
+Edine@DESKTOP-DTASPUT MINGW64 ~/Documents/the Gym/Git-practice-project1 (ft/home-page-redesign)
+$ git push origin ft/home-page-redesign
+Enumerating objects: 9, done.
+Counting objects: 100% (9/9), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (8/8), done.
+Writing objects: 100% (8/8), 924 bytes | 924.00 KiB/s, done.
+Total 8 (delta 4), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (4/4), completed with 1 local object.
+remote:
+remote: Create a pull request for 'ft/home-page-redesign' on GitHub by visiting:
+remote:      https://github.com/edine-noella/Git-practice-project1/pull/new/ft/home-page-redesign
+remote:
+To https://github.com/edine-noella/Git-practice-project1.git
+ * [new branch]      ft/home-page-redesign -> ft/home-page-redesign
 
 ```
