@@ -183,3 +183,42 @@ $ git reset --hard
 HEAD is now at b4c6cae home and about pages
 
 ```
+
+## Bundle 2
+
+### Exercise 1
+
+```bash
+Edine@DESKTOP-DTASPUT MINGW64 ~/Documents/the Gym/Git-practice-project1 (dev)
+$ git checkout -b ft/bundle-2
+Switched to a new branch 'ft/bundle-2'
+
+Edine@DESKTOP-DTASPUT MINGW64 ~/Documents/the Gym/Git-practice-project1 (ft/bundle-2)
+$ touch services.html
+
+Edine@DESKTOP-DTASPUT MINGW64 ~/Documents/the Gym/Git-practice-project1 (ft/bundle-2)
+$ git add .
+
+Edine@DESKTOP-DTASPUT MINGW64 ~/Documents/the Gym/Git-practice-project1 (ft/bundle-2)
+$ git commit -m "added our services"
+[ft/bundle-2 757662f] added our services
+ 1 file changed, 11 insertions(+)
+ create mode 100644 services.html
+
+Edine@DESKTOP-DTASPUT MINGW64 ~/Documents/the Gym/Git-practice-project1 (ft/bundle-2)
+$ git push origin ft/bundle-2
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 438 bytes | 438.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+remote:
+remote: Create a pull request for 'ft/bundle-2' on GitHub by visiting:
+remote:      https://github.com/edine-noella/Git-practice-project1/pull/new/ft/bundle-2
+remote:
+To https://github.com/edine-noella/Git-practice-project1.git
+ * [new branch]      ft/bundle-2 -> ft/bundle-2
+
+```
