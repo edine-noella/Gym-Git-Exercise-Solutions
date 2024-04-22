@@ -222,3 +222,175 @@ To https://github.com/edine-noella/Git-practice-project1.git
  * [new branch]      ft/bundle-2 -> ft/bundle-2
 
 ```
+
+### Exercise 2
+
+```bash
+Edine@DESKTOP-DTASPUT MINGW64 ~/Documents/the Gym/Git-practice-project1 (ft/bundle-2)
+$ git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+Edine@DESKTOP-DTASPUT MINGW64 ~/Documents/the Gym/Git-practice-project1 (main)
+$ git pull
+remote: Enumerating objects: 2, done.
+remote: Counting objects: 100% (2/2), done.
+remote: Compressing objects: 100% (2/2), done.
+remote: Total 2 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (2/2), 1.74 KiB | 296.00 KiB/s, done.
+From https://github.com/edine-noella/Git-practice-project1
+   3276ce4..2e4beb0  main       -> origin/main
+Updating 3276ce4..2e4beb0
+Fast-forward
+ about.html    | 11 +++++++++++
+ home.html     | 11 +++++++++++
+ services.html | 12 ++++++++++++
+ 3 files changed, 34 insertions(+)
+ create mode 100644 about.html
+ create mode 100644 home.html
+ create mode 100644 services.html
+
+Edine@DESKTOP-DTASPUT MINGW64 ~/Documents/the Gym/Git-practice-project1 (main)
+$ git checkout -b ft/service-redesign
+Switched to a new branch 'ft/service-redesign'
+
+Edine@DESKTOP-DTASPUT MINGW64 ~/Documents/the Gym/Git-practice-project1 (ft/service-redesign)
+$ git add .
+
+Edine@DESKTOP-DTASPUT MINGW64 ~/Documents/the Gym/Git-practice-project1 (ft/service-redesign)
+$ git commit -m "added a list of services"
+[ft/service-redesign 666d88f] added a list of services
+ 1 file changed, 8 insertions(+), 1 deletion(-)
+
+Edine@DESKTOP-DTASPUT MINGW64 ~/Documents/the Gym/Git-practice-project1 (ft/service-redesign)
+$ git push origin ft/service-redesign
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 345 bytes | 345.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+remote:
+remote: Create a pull request for 'ft/service-redesign' on GitHub by visiting:
+remote:      https://github.com/edine-noella/Git-practice-project1/pull/new/ft/service-redesign
+remote:
+To https://github.com/edine-noella/Git-practice-project1.git
+ * [new branch]      ft/service-redesign -> ft/service-redesign
+
+Edine@DESKTOP-DTASPUT MINGW64 ~/Documents/the Gym/Git-practice-project1 (ft/service-redesign)
+$ git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+Edine@DESKTOP-DTASPUT MINGW64 ~/Documents/the Gym/Git-practice-project1 (main)
+$ git add .
+
+Edine@DESKTOP-DTASPUT MINGW64 ~/Documents/the Gym/Git-practice-project1 (main)
+$ git commit -m "added Objects of list to our services"
+[main 78b8f5a] added Objects of list to our services
+ 1 file changed, 4 insertions(+)
+
+Edine@DESKTOP-DTASPUT MINGW64 ~/Documents/the Gym/Git-practice-project1 (main)
+$ git push
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 343 bytes | 343.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To https://github.com/edine-noella/Git-practice-project1.git
+   2e4beb0..78b8f5a  main -> main
+
+Edine@DESKTOP-DTASPUT MINGW64 ~/Documents/the Gym/Git-practice-project1 (main)
+$ git checkout ft/service-redesign
+Switched to branch 'ft/service-redesign'
+
+Edine@DESKTOP-DTASPUT MINGW64 ~/Documents/the Gym/Git-practice-project1 (ft/service-redesign)
+$ git diff
+
+Edine@DESKTOP-DTASPUT MINGW64 ~/Documents/the Gym/Git-practice-project1 (ft/service-redesign)
+$ git branch
+  dev
+  ft/bundle-2
+* ft/service-redesign
+  main
+
+Edine@DESKTOP-DTASPUT MINGW64 ~/Documents/the Gym/Git-practice-project1 (ft/service-redesign)
+$ git diff
+
+Edine@DESKTOP-DTASPUT MINGW64 ~/Documents/the Gym/Git-practice-project1 (ft/service-redesign)
+$ git diff main
+diff --git a/services.html b/services.html
+index e792658..d371bf9 100644
+--- a/services.html
++++ b/services.html
+@@ -7,28 +7,13 @@
+ </head>
+ <body>
+     <h1>Services Page</h1>
+-    <h1>Forgot to add reviewers</h1>
+-    <h1>Services Page</h1>
+-    <h1>Forgot to add reviewers</h1>
+-    <h1>Services Page</h1>
+-    <h1>Forgot to add reviewers</h1>
+-    <h1>Services Page</h1>
+-    <h1>Forgot to add reviewers</h1>
+-    <h1>Services Page</h1>
+-    <h1>Forgot to add reviewers</h1>
+-    <h1>Services Page</h1>
+-    <h1>Forgot to add reviewers</h1>
+-    <h1>Services Page</h1>
+-    <h1>Forgot to add reviewers</h1>
+-    <h1>Services Page</h1>
+-    <h1>Forgot to add reviewers</h1>
+-    <h1>Services Page</h1>
+-    <h1>Forgot to add reviewers</h1>
+-    <h1>Services Page</h1>
+-    <h1>Forgot to add reviewers</h1>
+-    <h1>Services Page</h1>
+-    <h1>Forgot to add reviewers</h1>
+-    <h1>Services Page</h1>
+-    <h1>Forgot to add reviewers</h1>
++
++    <ul>
++        <li>Service 1</li>
++        <li>Service 2</li>
++        <li>Service 3</li>
++        <li>Service 4</li>
++    </ul>
++
+ </body>
+ </html>
+\ No newline at end of file
+
+Edine@DESKTOP-DTASPUT MINGW64 ~/Documents/the Gym/Git-practice-project1 (ft/service-redesign)
+$ git merge main
+Auto-merging services.html
+CONFLICT (content): Merge conflict in services.html
+Automatic merge failed; fix conflicts and then commit the result.
+
+Edine@DESKTOP-DTASPUT MINGW64 ~/Documents/the Gym/Git-practice-project1 (ft/service-redesign|MERGING)
+$ git add .
+
+Edine@DESKTOP-DTASPUT MINGW64 ~/Documents/the Gym/Git-practice-project1 (ft/service-redesign|MERGING)
+$ git commit -m "resolved merge conflicts"
+[ft/service-redesign aa01bfa] resolved merge conflicts
+
+Edine@DESKTOP-DTASPUT MINGW64 ~/Documents/the Gym/Git-practice-project1 (ft/service-redesign)
+$ git push origin ft/service-redesign
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 366 bytes | 366.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To https://github.com/edine-noella/Git-practice-project1.git
+   666d88f..aa01bfa  ft/service-redesign -> ft/service-redesign
+
+Edine@DESKTOP-DTASPUT MINGW64 ~/Documents/the Gym/Git-practice-project1 (ft/service-redesign)
+$
+
+```
